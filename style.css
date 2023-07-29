@@ -51,14 +51,17 @@
   text-align: center;
   position: relative;
   font-weight: 100;
+  margin: 0 auto;
 }
 
 .container-image {
   height: 100vh;
+  display: flex;
   background-image: url("./img/parallax-imagem1.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  max-width: 100%;
 }
 
 .container-texto {
@@ -121,9 +124,10 @@
 
 .contato {
   background-image: url("./img/parallax-imagem4.png");
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 130vh;
+  height: 150vh;
   position: relative;
 }
 
@@ -148,6 +152,9 @@
   right: 0;
   margin: 0 auto;
   top: 20%;
+  padding-bottom: 10px;
+  height: 450px;
+  width: 1024px;
 }
 .box-contato {
   background-color: #604829;
@@ -159,7 +166,7 @@
   right: 0;
   margin: 0 auto;
   max-width: 600px;
-  bottom: 8%;
+  bottom: 30px;
   font-family: "Lato", sans-serif;
 }
 .box-contato a {
@@ -241,4 +248,341 @@ span {
   border-radius: 10px;
   background-color: #c4a47c;
   color: #fff;
+}
+.footer a img{
+  width: 35px;
+}
+
+@media (max-width: 1024px) {
+  .container-image h1 {
+    font-size: 75px;
+  }
+  .contato {
+    height: 125vh;
+  }
+  .contato iframe {
+    width: 900px;
+  }
+  .hora{
+    height: 90vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    padding: 50px;
+  }
+  .navbar img {
+    top: 0px;
+    left: 50px;
+    width: 100px;
+  }
+  .navbar a {
+    font-size: 28px;
+    top: 25%;
+  }
+  .link-info {
+    right: 330px;
+  }
+  .link-contato {
+    right: 210px;
+  }
+  .link-horario {
+    right: 90px;
+  }
+
+  .container-texto {
+    padding-top: 30px;
+  }
+  .container-texto h2 {
+    font-size: 30px;
+  }
+  .container-texto p {
+    font-size: 22px;
+  }
+  .contato{
+    height: 135vh;
+  }
+  .contato h2 {
+    font-size: 30px;
+  }
+  .box-contato {
+    font-size: 20px;
+    max-width: 650px;
+  }
+  .contato iframe {
+    width: 825px;
+  }
+  .hora {
+    height: 100vh;
+  }
+  .hora h2 {
+    font-size: 30px;
+  }
+  .lista {
+    font-size: 25px;
+  }
+  .lista li div {
+    width: 55%;
+  }
+  .footer {
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+  .footer a {
+    top: -35px;
+  }
+}
+
+@media (max-width: 825px) {
+  .navbar img {
+    left: 30px;
+  }
+  .navbar a {
+    font-size: 25px;
+    top: 30%;
+  }
+  .link-info {
+    right: 285px;
+  }
+  .link-contato {
+    right: 175px;
+  }
+  .link-horario {
+    right: 65px;
+  }
+  .container-texto {
+    padding-top: 50px;
+    height: auto;
+  }
+  .container-texto h2{
+    padding-top: 35px;
+  }
+  .contato {
+    height: 90vh;
+  }
+  .contato iframe {
+    width: 700px;
+    height: 600px;
+  }
+  .contato h2{
+    top: 45px;
+  }
+  .hora {
+    height: 88vh;
+  }
+  .hora h2 {
+    margin-bottom: 45px;
+    padding-top: 70px;
+  }
+  .lista {
+    margin: 0 auto;
+    width: 85%;
+    font-size: 28px;
+  }
+  .lista li{
+    margin-bottom: 70px;
+  }
+  .lista li div {
+    width: 48%;
+  }
+  .footer{
+    padding-bottom: 30px;
+  }
+  .footer a{
+    right: 30px;
+  }
+  .footer a img{
+    width: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  .navbar a {
+    font-size: 22px;
+    top: 30%;
+  }
+  .link-info {
+    right: 280px;
+  }
+
+  .link-contato {
+    right: 180px;
+  }
+  .link-horario {
+    right: 80px;
+  }
+
+  .container-texto {
+    height: auto;
+  }
+  .contato {
+    height: 130vh;
+  }
+  .hora {
+    height: 100vh;
+  }
+  .lista {
+    font-size: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .lista li div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contato iframe {
+    width: 575px;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar a {
+    font-size: 18px;
+    top: 35%;
+  }
+  .navbar img {
+    width: 90px;
+  }
+  .link-info {
+    right: 210px;
+  }
+
+  .link-contato {
+    right: 130px;
+  }
+  .link-horario {
+    right: 50px;
+  }
+  .contato {
+    height: 100vh;
+  }
+  .contato iframe {
+    width: 500px;
+    height: 350px;
+    top: 160px;
+  }
+  .box-contato {
+    font-size: 18px;
+    width: 500px;
+  }
+  .hora{
+    height: 120vh;
+  }
+  .footer a img{
+    width: 30px;
+    margin-top: 3px;
+  }
+  .footer a {
+    padding: 8px 10px;
+    top: -25px;
+  }
+  .footer p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar{
+    padding: 33px;
+  }
+  .navbar a {
+    font-size: 16px;
+    top: 34%;
+    padding: 0;
+  }
+  .navbar img {
+    width: 80px;
+    top: -5px;
+  }
+  .link-info {
+    right: 205px;
+  }
+  .link-contato {
+    right: 125px;
+  }
+  .link-horario {
+    right: 45px;
+  }
+  .container-image h1{
+    font-size: 40px;
+  }
+  .container-texto p{
+    font-size: 20px;
+  }
+  .container-texto h2{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .contato {
+    height: 110vh;
+  }
+  .contato h2{
+    font-size: 24px;
+    width: 400px;
+    top: 50px;
+  }
+  .contato iframe {
+    width: 455px;
+    height: 300px;
+    top: 190px;
+  }
+  .box-contato {
+    font-size: 16px;
+    width: 450px;
+  }
+  .hora{
+    height: 98vh;
+  }
+  .hora h2{
+    padding-top: 95px;
+    font-size: 24px;
+  }
+  .lista li div{
+    width: 45%;
+  }
+  .lista{
+    font-size: 18px;
+  }
+  .footer{
+    font-size: 15px;
+  }
+  .footer a img{
+    width: 25px;
+    margin-top: 5px;
+  }
+  .footer a{
+    padding: 8px 10px;
+    top: -25px;
+  }
+}
+
+@media (max-width: 457px) {
+  .contato iframe{
+    width: 400px;
+    height: 400px;
+  }
+  .box-contato{
+    width: 390px;
+    font-size: 15px;
+  }
+  .hora{
+    height: 100vh;
+  }
+  .lista li div{
+    width: 45%;
+  }
+  .lista{
+    font-size: 16px;
+  }
+  .lista li{
+    margin-bottom: 50px;
+  }
+  .footer p{
+    font-size: 14px;
+  }
 }
